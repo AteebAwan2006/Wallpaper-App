@@ -1,0 +1,193 @@
+/* Navbar */
+.small-navbar {
+  max-width: 700px;   
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+ /* background-image: linear-gradient(
+    rgb(18, 140, 253),
+    rgb(39, 243, 233),
+    rgb(176, 238, 253)
+  );
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* optional shadow */
+}
+/* OLD Navbar */
+/* .text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: xx-large;
+}  */
+
+.text {
+  text-align: center;
+  font-size: xx-large;
+  margin: 0;         
+  padding: 20px 0;   
+  position: relative; 
+  background: white; 
+  margin-bottom: 20px;
+
+}
+
+/* Wallpaper grid */
+.wallpaper-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Individual wallpaper items */
+.wallpaper-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease; 
+}
+
+.wallpaper-item img:hover {
+  transform: scale(1.05);
+}
+/* Download button */
+.download-btn {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  padding: 5px 12px;
+}
+/* Wallpaper item container */
+.wallpaper-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #e7e7e7;
+}
+
+/* Image */
+.wallpaper-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.wallpaper-item:hover img {
+  transform: scale(1.05);
+}
+
+.download-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show button only on hover */
+.wallpaper-item:hover .download-btn {
+  opacity: 1;
+}
+/* Lightbox background */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Image inside popup */
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #000;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+.wallpaper-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wallpaper-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.wallpaper-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Download button */
+.download-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* 🔄 Loader styling */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.spinner {
+  border: 5px solid #f3f3f3;      /* Light grey */
+  border-top: 5px solid #4cafef;  /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
